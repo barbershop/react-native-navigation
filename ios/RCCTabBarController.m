@@ -71,16 +71,16 @@
 }
 
 - (void)viewWillLayoutSubviews {
-  int height = 75;
-
-  CGSize screenSize = [[UIScreen mainScreen] bounds].size;
-  if (screenSize.height == 812) {
-    height = 85;
-  }
+//  int height = 75;
+//
+//  CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+//  if (screenSize.height == 812) {
+//    height = 85;
+//  }
 
   CGRect tabFrame = self.tabBar.frame; //self.TabBar is IBOutlet of your TabBar
-  tabFrame.size.height = height;
-  tabFrame.origin.y = self.view.frame.size.height - height;
+//  tabFrame.size.height = height;
+//  tabFrame.origin.y = self.view.frame.size.height - height;
   self.tabBar.frame = tabFrame;
 }
 
